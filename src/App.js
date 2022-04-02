@@ -1,11 +1,11 @@
-import CirclePlusBtn from "./components/CirclePlusBtn";
+import NoTaskScreen from './components/NoTaskScreen';
 import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <CirclePlusBtn />
+      <NoTaskScreen />
     </div>
   );
 }
