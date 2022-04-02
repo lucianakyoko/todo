@@ -8,3 +8,10 @@ export const flexColCenter = () => {
     flex-direction: column;
   `
 }
+
+export const blurColorBg = (blur) => {
+  return `
+    background-color: ${themeBase.mainColor};
+    filter: blur(${blur}px);
+  `
+}
