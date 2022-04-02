@@ -1,5 +1,6 @@
 export const themeBase = {
   mainColor: '#A43CD4',
+  secondaryColor: '#fff',
   secondaryFont: 'Exo 2',
 
   buttonColor: '#A43CD4',
