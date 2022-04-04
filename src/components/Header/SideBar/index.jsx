@@ -9,11 +9,11 @@ import {
 
 import SwitchBtn from '../SwitchBtn';
 
-const SideBar = () => {
+const SideBar = ({onClick}) => {
   return (
     <Navbar>
       <Wraper>
-        <CloseMenu />
+        <CloseMenu onClick={onClick}/>
         <NavItemsList>
           <ChangeModeWrapper>
             dark mode

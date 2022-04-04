@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <Header />
-      <SideBar />
+      
     </div>
   );
 }
