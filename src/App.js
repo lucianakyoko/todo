@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import NoTaskScreen from './components/NoTaskScreen';
+import SwitchBtn from './components/Header/SwitchBtn';
 import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <Header />
-      <NoTaskScreen />
+      <SwitchBtn />
     </div>
   );
 }
