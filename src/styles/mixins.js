@@ -15,3 +15,16 @@ export const blurColorBg = (blur) => {
     filter: blur(${blur}px);
   `
 }
+
+export const IconBtn =  () => {
+  return `
+    color: ${themeBase.buttonColor};
+    font-size: 4rem;
+    transition: ${themeBase.transition};
+
+    &:hover {
+      color: ${themeBase.buttonColorHover};
+      cursor: pointer;
+  }
+  `
+}
