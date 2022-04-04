@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import SwitchBtn from './components/Header/SwitchBtn';
+import SideBar from './components/Header/SideBar';
 import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <Header />
-      <SwitchBtn />
+      <SideBar />
     </div>
   );
 }
