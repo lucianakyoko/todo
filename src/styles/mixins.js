@@ -28,3 +28,18 @@ export const IconBtn =  () => {
   }
   `
 }
+
+export const showUpAnimation = () => {
+  return `
+  @keyframes showUpAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  animation: showUpAnimation 1.4s;
+  `
+}
