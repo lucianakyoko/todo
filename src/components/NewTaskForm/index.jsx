@@ -1,5 +1,6 @@
 import React from 'react';
-import PrimaryBtn from '../PrimaryBtn';
+import { PrimaryBtn } from '../PrimaryBtn/style';
+import { SecondaryBtn } from '../SecondaryBtn/style';
 import { StyledForm, FormWrapper, BtnWrapper } from './style';
 
 const NewTaskForm = () => {
@@ -16,8 +17,8 @@ const NewTaskForm = () => {
       </FormWrapper>
 
       <BtnWrapper>
-        <PrimaryBtn />
-        <a href="#">voltar</a>
+        <PrimaryBtn addBtn>Adicionar</PrimaryBtn>
+        <SecondaryBtn>voltar</SecondaryBtn>
       </BtnWrapper>
     </StyledForm>
   )
