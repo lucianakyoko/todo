@@ -1,19 +1,21 @@
 import React from 'react';
 import { PrimaryBtn } from '../PrimaryBtn/style';
 import { SecondaryBtn } from '../SecondaryBtn/style';
-import { StyledForm, FormWrapper, BtnWrapper } from './style';
+import { StyledForm, FormWrapper, Input, TagColor, InputWraper, BtnWrapper } from './style';
 
 const NewTaskForm = () => {
   return (
     <StyledForm>
       <FormWrapper>
-        <input type="text" placeholder='Tarefa'/>
-        <input type="time" placeholder='00:00:00' />
-        <div>
-          <input type="text" placeholder='tag'/>
-          <span></span>
-        </div>
-        <input type="text" placeholder='Prioridade'/>
+        <Input id="task" type="text" placeholder='Tarefa'/>
+        <Input id="time" type="time" placeholder='00:00:00' />
+
+        <InputWraper>
+          <Input id='tag' type="text" placeholder='tag'/>
+          <TagColor title='Escolha uma cor para sua tag'></TagColor>
+        </InputWraper>
+
+        <Input id='priority' type="text" placeholder='Prioridade'/>
       </FormWrapper>
 
       <BtnWrapper>
