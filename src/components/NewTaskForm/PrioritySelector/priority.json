@@ -1,0 +1,18 @@
+[
+  { 
+    "level": "",
+    "value": ""
+  },
+  {
+    "level": "Baixa",
+    "value": "low"
+  },
+  {
+    "level": "Média",
+    "value": "medium"
+  },
+  {
+    "level": "Alta",
+    "value": "hight"
+  }
+]
