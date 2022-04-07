@@ -9,6 +9,14 @@ export const flexColCenter = () => {
   `
 }
 
+export const flexSpaceBtwnRow = () => {
+  return `
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  `
+}
+
 export const blurColorBg = (blur) => {
   return `
     background-color: ${themeBase.mainColor};
