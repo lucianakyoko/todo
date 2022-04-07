@@ -29,6 +29,6 @@ export const tagColor = {
 
 export const priorityColor = {
   color1: '#28ED24',
-  color2: '#ED2424',
-  color3: '#ED9C24',
+  color2: '#ED9C24',
+  color3: '#ED2424',
 }
