@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
-import { PrimaryBtn } from '../PrimaryBtn/style';
-import { SecondaryBtn } from '../SecondaryBtn/style';
+import { Input, PrimaryBtn, SecondaryBtn } from '../../styles/ui';
 import PrioritySelector from './PrioritySelector';
-import { StyledForm, FormWrapper, Input, TagColor, InputWraper, BtnWrapper } from './style';
+import { StyledForm, FormWrapper, TagColor, InputWraper, BtnWrapper } from './style';
 
 const NewTaskForm = () => {
   const [optionName, setOptionName] = useState('');
