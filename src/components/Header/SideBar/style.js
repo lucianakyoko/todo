@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { themeBase } from "../../../styles/variables";
-import { showUpAnimation, IconBtn } from '../../../styles/mixins';
+import { IconBtn } from '../../../styles/ui';
+import { showUpAnimation } from '../../../styles/mixins';
 import { AiOutlineClose } from 'react-icons/ai';
 
 export const Navbar = styled.nav`
@@ -10,6 +11,7 @@ export const Navbar = styled.nav`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 3;
 
   background-color: ${themeBase.opacityBg};
   ${showUpAnimation};

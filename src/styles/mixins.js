@@ -24,19 +24,6 @@ export const blurColorBg = (blur) => {
   `
 }
 
-export const IconBtn =  () => {
-  return `
-    color: ${themeBase.buttonColor};
-    font-size: 4rem;
-    transition: ${themeBase.transition};
-
-    &:hover {
-      color: ${themeBase.buttonColorHover};
-      cursor: pointer;
-  }
-  `
-}
-
 export const showUpAnimation = () => {
   return `
   @keyframes showUpAnimation {
@@ -51,3 +38,4 @@ export const showUpAnimation = () => {
   animation: showUpAnimation 1.4s;
   `
 }
+
