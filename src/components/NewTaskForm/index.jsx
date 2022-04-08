@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { Input, PrimaryBtn, SecondaryBtn } from '../../styles/ui';
 import PrioritySelector from './PrioritySelector';
+
 import { StyledForm, FormWrapper, TagColor, InputWraper, BtnWrapper } from './style';
 
 const NewTaskForm = () => {
-  const [optionName, setOptionName] = useState('');
-  const [priorityColor, setPriorityColor] = useState('');
+
   return (
     <StyledForm>
       <FormWrapper>
@@ -18,12 +18,7 @@ const NewTaskForm = () => {
           <TagColor title='Escolha uma cor para sua tag'></TagColor>
         </InputWraper>
 
-        <PrioritySelector 
-          optionName={optionName} 
-          setOptionName={setOptionName}
-          priorityColor={priorityColor}
-          setPriorityColor={setPriorityColor}
-        />
+        <PrioritySelector />
       </FormWrapper>
 
       <BtnWrapper>

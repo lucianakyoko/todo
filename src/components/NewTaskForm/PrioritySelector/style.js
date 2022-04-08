@@ -1,99 +1,75 @@
 import styled from "styled-components";
-import {MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
 import { themeBase, priorityColor } from "../../../styles/variables";
-import { flexColCenter, flexSpaceBtwnRow } from '../../../styles/mixins';
+import { flexSpaceBtwnRow } from "../../../styles/mixins";
 
-export const SelectorBtn = styled.div`
+export const SelectWrapper = styled.div`
+  width: 100%;
+  
+  ${flexSpaceBtwnRow};
+  gap: .8rem;
+  `
+
+export const Select = styled.select`
   width: 100%;
   padding: .8rem 2.4rem;
   border: none;
+  border-bottom: 6px solid transparent;
   border-radius: ${themeBase.borderRadius};
+  background-color: #fff;
 
-  ${flexSpaceBtwnRow};
-
-  color: #222;
   font-size: 1.8rem;
-  letter-spacing: .12em;
-  background-color: beige;
-  
-  position: relative;
-  transition: ${themeBase.transition};
+  color: #888;
 
-  &:hover {
-    cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+
+  &.low {
+    color: ${priorityColor.color1};
+    border-bottom: 6px solid ${priorityColor.color1};
+  }
+
+  &.medium {
+    color: ${priorityColor.color2};
+    border-bottom: 6px solid ${priorityColor.color2};
+  }
+
+  &.hight {
+    color: ${priorityColor.color3};
+    border-bottom: 6px solid ${priorityColor.color3};
   }
 `
 
-export const SelectorWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
-`
-
-export const IconArrowIconUp = styled(MdKeyboardArrowUp)`
-  color: ${themeBase.mainColor};
-  font-size: 2.8rem;
-`
-
-export const IconArrowIconDown = styled(MdKeyboardArrowDown)`
-  color: ${themeBase.mainColor};
-  font-size: 2.8rem;
-`
-
-export const OptionsWrapper = styled.div`
-  display: none;
-  transition: ${themeBase.transition};
-  
-  &.active{
-    width: 100%;
-    padding: 1.8rem;
-  
-    ${flexColCenter};
-    gap: .8rem;
-  
-    position:  absolute;
-    left: 0;
-    top: 48px;
-  
-    background-color: aliceblue;
-
-  }
-`;
-
-export const OptionWrapper  =styled.div`
-  padding: .8rem 2.4rem;
-  width: 100%;
-  border-radius: ${themeBase.borderRadius};
-
-
-  ${flexSpaceBtwnRow};
-
-  background-color: #EEEBEB;
-  transition: ${themeBase.transition};
-  
-  &:hover {
-    background-color: #C7D9EB;
-    cursor: pointer;
-  }
-`
-
-export const Option = styled.span`
-  color: #000;
-`
-
-export const OptionColor = styled.span`
-  width: 18px;
-  height: 18px;
-
-  border-radius: 50%;
+export const OptionItem = styled.option`
+  border: none;
+  outline: none;
+  background-color: aliceblue;
   
   &.low {
+    color: ${priorityColor.color1};
+  }
+
+  &.medium {
+    color: ${priorityColor.color2};
+  }
+
+  &.hight {
+    color: ${priorityColor.color3};
+  }
+`
+
+export const Color = styled.div`
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  &.low {
     background-color: ${priorityColor.color1};
-  };
+  }
   &.medium {
     background-color: ${priorityColor.color2};
-  };
+  }
   &.hight {
     background-color: ${priorityColor.color3};
-  };
-`;
+  }
+`

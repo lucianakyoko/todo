@@ -1,46 +1,28 @@
-import React from 'react';
-import { useState } from 'react';
-import priorities from './priority.json';
-import {
-  SelectorBtn, 
-  SelectorWrapper,
-  IconArrowIconUp, 
-  IconArrowIconDown,
-  OptionsWrapper, 
-  OptionWrapper, 
-  Option, 
-  OptionColor 
-} from './style';
+import React, {useState} from 'react';
+import priority from './priority.json';
+import { SelectWrapper, Select, OptionItem, Color } from './style';
 
-const PrioritySelector = ({ optionName, setOptionName, priorityColor, setPriorityColor}) => {
-  const [open, setOpen] = useState(false);
 
-  function prioritySelection() {
-    setOpen(!open);
+const PrioritySelector = () => {
+  const [select, setSelect] = useState('');
+
+  function handleClick(event) {
+    const value = event.target.value;
+    setSelect(value);
   }
 
   return (
-    <SelectorBtn onClick={prioritySelection}>
-      <SelectorWrapper>
-        <span>{ optionName || 'Prioridade'}</span>
-        <OptionColor className={priorityColor || ''} />
-      </SelectorWrapper>
-
-      {open ? <IconArrowIconUp /> : <IconArrowIconDown />}   
-         
-      <OptionsWrapper className={open ? 'active' : ''}>
-        {priorities.map(option => (
-          <OptionWrapper key={option.value} onClick={() => {
-            setOptionName(option.level)
-            setPriorityColor(option.value)
-          }}>
-            <Option>{option.level}</Option>
-            <OptionColor className={option.value} />
-          </OptionWrapper>
+    <SelectWrapper>
+      <Select className={select} name='priority'>
+        <option selected disabled>Prioridade:</option>
+        {priority.map(option => (
+          <OptionItem key={option.value} onClick={handleClick} className={option.value} value={option.value}>
+            {option.level}   
+          </OptionItem>
         ))}
-      </OptionsWrapper>
-    </SelectorBtn>
-
+      </Select>
+      <Color className={select}></Color>
+    </SelectWrapper>
   )
 }
 
