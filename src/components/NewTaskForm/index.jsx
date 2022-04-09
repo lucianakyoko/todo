@@ -7,8 +7,6 @@ import TagSelector from './Tag';
 import { 
   StyledForm, 
   FormWrapper, 
-  TagColor, 
-  InputWraper, 
   BtnWrapper } from './style';
 
 const NewTaskForm = () => {
