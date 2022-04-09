@@ -35,6 +35,7 @@ export const Input = styled.input`
   }
 `
 
+
 export const PrimaryBtn = styled.button`
   padding:  1.4rem 6rem;
 
