@@ -13,17 +13,20 @@ export const Navbar = styled.nav`
   left: 0;
   z-index: 3;
 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: ${themeBase.opacityBg};
   ${showUpAnimation};
-`
+  `
 
 export const Wraper = styled.div`
   width: 300px;
-  height: 100vh;
+  height: 100%;
   padding: 40px 24px 24px 24px;
-
+  
+  
   background-color: beige;
-
   animation: openSidebar .4s;
 
   @keyframes openSidebar {

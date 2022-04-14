@@ -8,6 +8,7 @@ import {
 } from './style';
 
 import SwitchBtn from '../SwitchBtn';
+import Footer from '../../Footer';
 
 const SideBar = ({onClick}) => {
   return (
@@ -23,6 +24,7 @@ const SideBar = ({onClick}) => {
           <li>sobre</li>
         </NavItemsList>
       </Wraper>
+      <Footer />
     </Navbar>
   )
 }
