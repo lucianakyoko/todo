@@ -9,6 +9,15 @@ export const flexColCenter = () => {
   `
 }
 
+export const flexRowCenter = () => {
+  return `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  `
+}
+
 export const flexSpaceBtwnRow = () => {
   return `
     display: flex;
